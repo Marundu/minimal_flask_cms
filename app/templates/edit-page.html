@@ -2,7 +2,7 @@
 {% block content %}
   <br/>
   <br/>
-  <form action="{[ url_for('update_page') }}" method="POST">
+  <form action="{{ url_for('update_page') }}" method="POST">
     <input type="hidden" name="id" value="{{ id }}"/>
     <input type="text" name="title" value="{{ title }}"/>
     <br/>
